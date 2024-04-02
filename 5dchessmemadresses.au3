@@ -6,6 +6,8 @@ Func varsload($base)
 	Global $undomovereducedbyadress = $ptrfirstboard - 0xE8A23
 	Global $endofgamedescription = $ptrfirstboard + 0xD0
 	Global $finishgamebutton = $ptrfirstboard + 0xC8
+	Global $somepropertythatchangesattheendofgame = $ptrfirstboard + 0xD4
+	Global $backgroundcolor = $ptrfirstboard + 0x3DC
 EndFunc
 
 
@@ -21,4 +23,8 @@ EndFunc
 	$finishgamebutton
 		0 = not active
 		1-255 = active
+
+	$somepropertythatchangesattheendofgame not sure yet
+
+	$backgroundcolor seems to for now just be working with specific color codes, not sure yet why
 #ce
