@@ -58,7 +58,7 @@ While 1
 		Case $B_resumegame
 			_KDMemory_WriteProcessMemory($handles,$finishgamebutton,"BYTE",0)
 			_KDMemory_WriteProcessMemory($handles,$endofgamedescription,"BYTE",0)
-
+			_KDMemory_WriteProcessMemory($handles,$backgroundcolor,"INT",0)
 		Case $B_Load
 			load()
 			If @error Then
@@ -76,6 +76,7 @@ While 1
 	if ((not ProcessExists($name)) and GUICtrlGetState($B_Load) = 144) Then
 		_KDMemory_CloseHandles($handles)
 		GUICtrlSetState($B_Load,64)
+		GUICtrlSetData($B_Load,"Loadup")
 	EndIf
 WEnd
 
