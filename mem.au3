@@ -1,7 +1,8 @@
-#RequireAdmi
 #Region ;**** Directives created by AutoIt3Wrapper_GUI ****
+#AutoIt3Wrapper_Outfile=out\5dchessmemory.exe
 #AutoIt3Wrapper_UseX64=y
 #EndRegion ;**** Directives created by AutoIt3Wrapper_GUI ****
+#RequireAdmi
 #include <include\KDMemory.au3>
 #include <include\5dchessmemadresses.au3>
 #include <ButtonConstants.au3>
