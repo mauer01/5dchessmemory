@@ -59,6 +59,7 @@ While 1
 			_KDMemory_WriteProcessMemory($handles,$finishgamebutton,"BYTE",0)
 			_KDMemory_WriteProcessMemory($handles,$endofgamedescription,"BYTE",0)
 			_KDMemory_WriteProcessMemory($handles,$backgroundcolor,"INT",0)
+			_KDMemory_WriteProcessMemory($handles,$somepropertythatchangesattheendofgame,"INT",0)
 		Case $B_Load
 			load()
 			If @error Then
